@@ -1,0 +1,121 @@
+/* Ajout police */
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../police/Rajdhani-Medium.ttf);
+}
+@font-face {
+    font-family: 'space grotesk';
+    src: url(../police/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+/* @import url */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Space+Grotesk:wght@700&display=swap');
+
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #F8F184;
+    --blue: #1958FD;
+    --red: #B11313;
+    --black: #0D0E09;
+    --gris: #c4c4c4;
+    --white: #fff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(3, 3, 3);
+    color: white;
+    font-family: 'space grotesk';
+    font-weight: 18px ;
+
+}
+
+ /*design de la navigation*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul a{
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Rajdhani";
+    /*text-decoration: none;*/
+}
+
+nav ul a:hover{
+    color: var(--yellow-color);
+} 
+
+/* design de la partie entete hero*/
+
+#hero {
+    background-image: url(../Illustrations/Bathome1.png);
+    background-color: #0D0E09;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 800px;
+
+}
+
+ h1{
+    font-family: 'Rajdhani';
+    font-size: 36px;
+    font-weight: 500;
+ }
+
+ h2{
+    font-family: 'space grotesk regular';
+    font-size: 22px;
+    font-weight: 500;
+ }
+
+ button{
+    font-family: 'Rajdhani-Medium';
+    font-size: 20px;
+    font-weight: 500;
+ }
+
+ .container{
+    width: 100%;
+    margin: 25 auto;
+ }
+
+ /* design de la section batman personnage */
+ .batman-personnage{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+
+ }
+
+.allies{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+
+ }
+
+.nemesis{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+
+ }
+
+
+
+
