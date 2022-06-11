@@ -42,6 +42,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    
 }
 
 ul{
@@ -49,7 +50,7 @@ ul{
 }
 
 nav ul a{
-    color: var(--white);
+    background-color: var(--yellow-color);
     font-size: 24px;
     font-weight: 500;
     font-family: "Rajdhani";
@@ -57,7 +58,7 @@ nav ul a{
 }
 
 nav ul a:hover{
-    color: var(--yellow-color);
+    background-color: var(--yellow-color);
 } 
 
 /* design de la partie entete hero*/
@@ -116,6 +117,13 @@ nav ul a:hover{
 
  }
 
+ .justice-league{
+    display: block;
+ }
+
+ .multimedia{
+    display: block;
+ }
 
 
 
