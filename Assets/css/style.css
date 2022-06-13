@@ -11,6 +11,7 @@
 /* @import url */
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Space+Grotesk:wght@700&display=swap');
 
+/*couleur menu type*/
 :root{
     --yellow-color: #FFFF00;
     --yellow-light: #F8F184;
@@ -22,21 +23,11 @@
 
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*entete*/
 
-body{
-    background-color: rgb(3, 3, 3);
-    color: white;
-    font-family: 'space grotesk';
-    font-weight: 18px ;
-
-}
 
  /*design de la navigation*/
+ 
 nav{
     display: flex;
     align-items: center;
@@ -49,7 +40,11 @@ ul{
     list-style: none;
 }
 
-nav ul a{
+li{
+    list-style: none;
+}
+
+nav ul li a{
     background-color: var(--yellow-color);
     font-size: 24px;
     font-weight: 500;
@@ -57,19 +52,45 @@ nav ul a{
     /*text-decoration: none;*/
 }
 
-nav ul a:hover{
+nav ul li a:hover{
     background-color: var(--yellow-color);
 } 
+
 
 /* design de la partie entete hero*/
 
 #hero {
     background-image: url(../Illustrations/Bathome1.png);
-    background-color: #0D0E09;
+    background-color: var(--black);
     background-repeat: no-repeat;
     background-position: top center;
     height: 800px;
+    text-align: center;
 
+}
+
+
+/*design corps de la page*/
+
+/*selecteur universel* */
+*{ 
+    margin: 6px;
+    padding: 6px;
+    box-sizing: border-box;
+    
+   
+}
+
+body{
+    border: 1px solid var(--white);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    background-color: rgb(3, 3, 3);
+    color: white;
+    font-family: 'space grotesk';
+    font-weight: 0px ;
 }
 
  h1{
@@ -82,12 +103,22 @@ nav ul a:hover{
     font-family: 'space grotesk regular';
     font-size: 22px;
     font-weight: 500;
+    text-align: center;
  }
+
+ h3{
+    text-align: center;
+ }
+
+ p {
+    text-align: center;
+  } 
 
  button{
     font-family: 'Rajdhani-Medium';
     font-size: 20px;
     font-weight: 500;
+    text-align: center;
  }
 
  .container{
@@ -125,5 +156,8 @@ nav ul a:hover{
     display: block;
  }
 
-
+/*footer*/
+footer{
+        text-align: center;
+}
 
