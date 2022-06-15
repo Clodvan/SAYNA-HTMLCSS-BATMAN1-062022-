@@ -15,11 +15,13 @@
 :root{
     --yellow-color: #FFFF00;
     --yellow-light: #F8F184;
-    --blue: #1958FD;
-    --red: #B11313;
-    --black: #0D0E09;
-    --gris: #c4c4c4;
-    --white: #fff;
+    --blue-color: #1958FD;
+    --red-color: #B11313;
+    --black-color: #0D0E09;
+    --gris-color: #c4c4c4;
+    --white-color: #fff;
+    --gradient-white: #eddebf54;
+    --gradient-red: #89000954;
 
 }
 
@@ -32,7 +34,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 30px 0;
     
 }
 
@@ -40,20 +42,16 @@ ul{
     list-style: none;
 }
 
-li{
-    list-style: none;
-}
-
-nav ul li a{
+nav ul a{
     background-color: var(--yellow-color);
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 500;
     font-family: "Rajdhani";
     /*text-decoration: none;*/
 }
 
-nav ul li a:hover{
-    background-color: var(--yellow-color);
+nav ul a:hover{
+    color: var(--yellow-color);
 } 
 
 
@@ -61,10 +59,46 @@ nav ul li a:hover{
 
 #hero {
     background-image: url(../Illustrations/Bathome1.png);
-    background-color: var(--black);
     background-repeat: no-repeat;
     background-position: top center;
     height: 800px;
+    text-align: center;
+    background-size: cover;
+
+}
+/*width: 0%;
+    margin: 0 auto;
+    padding-top: 0px;
+*/
+
+#hero .titre{
+    margin: 20px 0;
+}
+
+.btn{
+   text-decoration: none;
+   color: var(--white-color);
+   font-size: 16px;
+   margin-top: 10px;
+   padding: 10px 40px;
+   background: linear-gradient(
+    80deg, var(--gradient-white), var(--gradient-red)
+   );
+   box-shadow: var(--black-color) 5px 5px 60px;
+
+}
+
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 400px;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 
 }
@@ -74,33 +108,35 @@ nav ul li a:hover{
 
 /*selecteur universel* */
 *{ 
-    margin: 6px;
-    padding: 6px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     
    
 }
 
 body{
-    border: 1px solid var(--white);
+    border: 1px solid var(--gradient-white);
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 40px;
-    margin-left: 40px;
-    background-color: rgb(3, 3, 3);
-    color: white;
-    font-family: 'space grotesk';
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-family: 'Rajdhani'; 
     font-weight: 0px ;
+    
 }
 
  h1{
     font-family: 'Rajdhani';
     font-size: 36px;
     font-weight: 500;
+    
  }
 
  h2{
-    font-family: 'space grotesk regular';
+    font-family: 'Rajdhani';
     font-size: 22px;
     font-weight: 500;
     text-align: center;
@@ -110,34 +146,57 @@ body{
     text-align: center;
  }
 
- p {
-    text-align: center;
-  } 
 
- button{
+  button{
     font-family: 'Rajdhani-Medium';
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
+    font-size: 10px;
+    font-weight: 200;
  }
 
  .container{
     width: 100%;
-    margin: 25 auto;
+    margin: 0 auto;
  }
 
+ /* position fleche */
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 1px;
+    top: 230px;
+}
+
+.scroll .social{
+    margin-top: 15px;
+}
+
  /* design de la section batman personnage */
+
+ #batman-cinema{
+    margin-top: 40px 0;
+ }
  .batman-personnage{
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
-
+    margin-top: 40px;
  }
+ 
+.d, .e, .f, .g, .h{
+    margin-bottom: 40px;
+    width: 80%;
+    margin-top: 40px; 
+    text-align: justify;
+}
 
 .allies{
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
+    margin-top: 40px;
 
  }
 
@@ -145,15 +204,23 @@ body{
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
+    margin-top: 40px;
 
  }
 
  .justice-league{
     display: block;
+    margin-top: 40px;
  }
 
+ #multimedia .slider-multimedia, #multimedia .slider-content{
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+ }
  .multimedia{
     display: block;
+    margin-top: 40px;
  }
 
 /*footer*/
