@@ -359,13 +359,29 @@ body{
  }
 
  #citations .citation-auteur{
-    padding-top: 5%;
+    padding-top: 10px;
     font-size: 12px;
  }
 
+ #citations .guillemet-close{
+   float: right;
+ }
+
+ 
 
 /*footer*/
 footer{
-        text-align: center;
+   margin-top: 163px;
 }
+ footer .text-footer{
+   text-align: center;
+   font-size: 12px;
+ }
+ footer .social-footer{
+   text-align: center;
+   margin: 50px;
+ }
 
+ footer .social-item{
+   padding: 15px;
+ }
