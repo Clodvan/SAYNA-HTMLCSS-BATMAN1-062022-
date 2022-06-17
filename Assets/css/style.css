@@ -20,8 +20,10 @@
     --black-color: #0D0E09;
     --gris-color: #c4c4c4;
     --white-color: #fff;
-    --gradient-white: #eddebf54;
-    --gradient-red: #89000954;
+    --gradient-white: #EDDEBF40;
+    --gradient-red: #89000960;
+    --gradient-grey: #EDDEBF40;
+    --gradient-gray: #19587D40;
 
 }
 
@@ -121,6 +123,9 @@ body{
     margin-bottom: 10px;
     margin-right: 50px;
     margin-left: 50px;
+     background: linear-gradient(
+    80deg, var(--gradient-white), var(--gradient-red)
+   );
     background-color: var(--black-color);
     color: var(--white-color);
     font-family: 'Rajdhani'; 
@@ -141,16 +146,16 @@ body{
     font-weight: 500;
     text-align: center;
  }
-
+/*
  h3{
     text-align: center;
  }
-
+*/
 
   button{
     font-family: 'Rajdhani-Medium';
     font-size: 10px;
-    font-weight: 200;
+    font-weight: 100;
  }
 
  .container{
@@ -213,15 +218,154 @@ body{
     margin-top: 40px;
  }
 
- #multimedia .slider-multimedia, #multimedia .slider-content{
+ /*design de la partie multimedia*/
+
+ #multimedia .slider-multimedia{
     display: flex;
-    width: 80%;
-    margin: 10px auto;
+    width: 58%;
+    margin: 40px auto;
  }
- .multimedia{
+
+ #multimedia .slider-image{
+    width: 100%;
+ }
+
+ #multimedia .slider-content{
+    padding: 20px;
+    background-color: rgba(36, 35, 35, 0.438);
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+    background: linear-gradient(
+        100deg, var(--gradient-white), rgba(128, 128, 128, 0.425)
+       );
+    
+
+ }
+
+#multimedia p{
+    font-size: 14px;
+    text-align: justify;
+ }
+
+ #multimedia button{
+    position: relative;
+    top: 155px;
+    background-color: transparent;
+    border: none;
+ }
+
+ #multimedia button.right{
+    right: -92%;
+ }
+
+ #multimedia .yellow{
+    color: var(--yellow-color);
+ }
+
+ /*design de la partie formulaire*/
+
+ #formulaire{
+    background: linear-gradient(
+    80deg, var(--gradient-grey), var(--gradient-gray)
+   );
+   box-shadow: var(--black-color) 5px 5px 60px;
+   padding: 60px;
+ }
+
+ #formulaire h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+ }
+
+ #formulaire .titre{
     display: block;
-    margin-top: 40px;
+   margin: 25px 0;  
  }
+
+ #formulaire .form{
+    width: 50%;
+    margin: 0 auto;
+ }
+
+ #formulaire .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 1px solid var(--white-color);
+    background-color: transparent;
+    padding-top: 10px 0 ;
+ }
+
+ #formulaire .form .icon img{
+    transform: rotate(90deg);
+    width: 15px;
+    
+ }
+
+ #formulaire .news{
+    margin: 15px 0;
+    border-bottom: 1px solid var(--white-color);
+ }
+
+ ::placeholder{
+    color: #c4c4c4;
+    font-size: 15px;
+ }
+
+ .btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .form input[type='radio']{
+    opacity: 0;
+ }
+
+ .form .btn-group label{
+    cursor: pointer;
+    border: 1px solid;
+    border-image: linear-gradient(
+        69deg, --gradient-white
+    );
+    padding: 10px;
+    font-size: 18px;
+ }
+
+ input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 40px;
+    background: linear-gradient(
+    80deg, var(--gradient-white), var(--gradient-red)
+   );
+   border: none;
+ }
+
+ /* Design citation */
+ #citations{
+    margin: 90px ;
+ }
+
+ #citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+ }
+
+ #citations .citation-auteur{
+    padding-top: 5%;
+    font-size: 12px;
+ }
+
 
 /*footer*/
 footer{

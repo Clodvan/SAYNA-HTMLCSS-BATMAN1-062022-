@@ -162,40 +162,34 @@
 </section>
 
 <!-- sixieme section multimedia-->
+
 <section id="multimedia">
 <div class="container">
     <h1>MULTIMÉDIA</h1>
-    <div class="multimedia">
-        <button class="left">
-            <img src="./Assets/Logos/icon_flèche_1.png" alt="fleche gauche">
-        </button>
-        <div class="slider-multimedia">
+    <button class="left">
+        <img src="./Assets/Logos/icon_flèche_1.png" alt="fleche gauche">
+    </button>
+    <button class="right">
+        <img src="./Assets/Logos/icon_flèche_2.png" alt="fleche droite">
+    </button>
+    <div class="slider-multimedia">
         <div class="slider-image">
-
-    </div>
-    <div>
-        <img src="./Assets/Illustrations/Bathome_ba1.png" alt="Bathome_ba1">
-    </div>
-        <div class="slider-content">
-        <h2> ACTION, ADVENTURE</h2>
-        <h3>Batman Begins</h3>
-        <p>IMD : <span>8.2</span> </p>
-        <P class="h">
-            Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément
-traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de
-guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à
-Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans
-la lutte contre le crime sous le nom de Batman.
-        </P>
-    </div>
-    </div>
-        <button class="right">
-            <img src="./Assets/Logos/icon_flèche_2.png" alt="fleche droite">
-        </button>
+            <img src="./Assets/Illustrations/Bathome_ba1.png" alt="Bathome_ba1">
         </div>
-    <div>
-       
+        <div class="slider-content">
+            <p> ACTION, ADVENTURE</p>
+            <p>Batman Begins</p>
+            <p>IMD: <span class="yellow">8.2</span></p><br>
+            <P>
+                Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément
+    traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de
+    guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à
+    Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans
+    la lutte contre le crime sous le nom de Batman.
+            </P>
+        </div>
     </div>
+    
     <div class="image-bande-annonce">
         <img src="./Assets/Illustrations/Bathome_ba2.png" alt="Bathome_ba2">
     </div>
@@ -203,29 +197,34 @@ la lutte contre le crime sous le nom de Batman.
 </section>
 
 <!-- septieme section Formulaire-->
-<section ALIGN="CENTER">
-    <div>
+<section id="formulaire">
+    <div class="form">
         <h2>PRENONS  CONTACT</h2>
         <form action="">
-        <label for="email">ADRESSE MAIL</label><br>
-        <input type="email" name="email" placeholder="email"><br>
-        <label for="newsletter">NEWSLETTER</label><br>
-        <input type="newsletter" name="newsletter" placeholder="newsletter"><br>
+        <label class="titre" for="email">ADRESSE EMAIL</label>
+        <input type="email" name="email" placeholder="Adresse email">
+        <label class="titre" for="newsletter">NEWSLETTER</label>
         <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
-            Batman<span><input type="checkbox" name="" id="">:</span></label><br>
+            Batman<span> <input type="checkbox" name="" id=""> : </span></label>
             <div>
-                <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
-                <span>
+                <span class="news">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+                <span class="icon">
                     <img src="./Assets/Logos/icon_flèche_2.png" alt="fleche droite">
                 </span>
             </div>
             <div>
-                <p>Souhaitez-vous recevoir des news</p>
+                <p class="news">Souhaitez-vous recevoir des news</p>
             </div>
-            <a href="">Des films</a>
-            <a href="">Des comics</a>
-            <a href="">De tout</a>
-            <p>Message</p>
+            <div class="btn-group">
+                <input type="radio" id="film">
+                <label for="films">Des films</label>
+                <input type="radio" id="comics">
+                <label for="comics">Des comics</label>
+                <input type="radio" id="tout">
+                <label for="tout">De tout</label>
+            </div>
+            
+            <p class="titre">Message</p>
             <textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea><br>
             <input type="submit" value="CONFIRMER">       
         </form>
@@ -233,20 +232,20 @@ la lutte contre le crime sous le nom de Batman.
 </section>
 
 <!-- huitieme section citation-->
-<section ALIGN="CENTER">
-    <div>
-        <div>
+<section id="citations">
+    <div class="container">
+        <div class="guillemet-open">
             <img src="./Assets/Logos/icon_guillemets_1.png" alt="guillemets ouvrants">
         </div>
-        <div>
+        <div class="citation-carte">
             <div>
-                <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles. </p>
+                <p class="citation-texte">La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
             </div>
             <div>
-                <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
+                <p class="citation-auteur">The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
             </div>
         </div>
-        <div>
+        <div class="guillemet-close">
             <img src="./Assets/Logos/icon_guillemets_2.png" alt="guillemets fermants">
         </div>
     </div>
