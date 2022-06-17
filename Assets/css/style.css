@@ -123,9 +123,6 @@ body{
     margin-bottom: 10px;
     margin-right: 50px;
     margin-left: 50px;
-     background: linear-gradient(
-    80deg, var(--gradient-white), var(--gradient-red)
-   );
     background-color: var(--black-color);
     color: var(--white-color);
     font-family: 'Rajdhani'; 
